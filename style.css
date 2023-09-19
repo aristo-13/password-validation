@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 2, 40);
+}
+.container{
+    border: solid 1px;
+    padding: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px white;
+    background-color: rgba(255, 255, 255, 0.922);
+    filter: blur(1);
+    box-shadow: 0px 0px 60px black;
+}
+.input{
+    width: 85%;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: outline 1s ease;
+}
+.text{
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    outline: none;
+}
+.show-pass{
+    position: absolute;
+    background-color: white;
+    border: none;
+    top: 50%;
+    height: 80%;
+    transform: translateY(-50%);
+    right: 2px;
+    outline: none;
+    cursor: pointer;
+}
+.validity{
+    list-style: none;
+}
+.check{
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+.check.active{
+    color: green;
+}

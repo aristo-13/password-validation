@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/password-validation/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script defer src="/password-validation/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="password" class="text">
+           <button class="show-pass"><span class="material-symbols-outlined eyeclosed">visibility_off</span></button>
+        </div>
+
+        <div class="validity-check">
+            <span>Password should include;</span>
+            <ul class="validity">
+                <li class="check">
+                    <span class="material-symbols-outlined circle">radio_button_unchecked</span>
+                    <span>At least 8 characters length</span>
+                </li>
+                <li class="check">
+                    <span class="material-symbols-outlined circle">radio_button_unchecked</span>
+                    <span>At least 1 number (0...9)</span>
+                </li>
+                <li class="check">
+                    <span class="material-symbols-outlined circle">radio_button_unchecked</span>
+                    <span>At least 1 lowercase letter (a...z)</span>
+                </li>
+                <li class="check">
+                    <span class="material-symbols-outlined circle">radio_button_unchecked</span>
+                    <span>At least 1 special character (!...$)</span>
+                </li>
+                <li class="check">
+                    <span class="material-symbols-outlined circle">radio_button_unchecked</span>
+                    <span>At least 1 uppercase letter (A...Z)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
